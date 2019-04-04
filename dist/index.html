@@ -19,10 +19,10 @@
             {{#each foods}}
             <div class='food'>
                 <p class='p'><a href='{{href}}'>{{title}}</a></p>
-                <img src='{{thumbnail}}'/>
+                <img class='img' src='{{thumbnail}}'/>
                 <ul>
                     {{#each ingredients}}
-                        <li>{{ingredient}}</li>
+                        <li>{{this}}</li>
                     {{/each}}
                 </ul>
                 

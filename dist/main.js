@@ -8,3 +8,7 @@ $('.btn').on('click', function(){
     })
 })
 
+$('.img').on('click', function(){
+    
+})
+
