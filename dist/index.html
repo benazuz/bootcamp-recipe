@@ -12,10 +12,29 @@
 <body>
     <input class="inpt" type="text" placeholder="food name">
     <button class="btn">Search</button>
+    <div class='container'></div>
+
+    <script id="foods-template" type="text/x-handlebars-template">
+        <div class=foods>
+            {{#each foods}}
+            <div class='food'>
+                <p class='p'><a href='{{href}}'>{{title}}</a></p>
+                <img src='{{thumbnail}}'/>
+                <ul>
+                    {{#each ingredients}}
+                        <li>{{ingredient}}</li>
+                    {{/each}}
+                </ul>
+                
+            </div>
+            {{/each}}
+        </div>
+    </script>
 
 
     <script src="./jquery/dist/jquery.js"></script>
     <script src="./handlebars/dist/handlebars.js"></script>
+    <script src="Renderer.js"></script>
     <script src="main.js"></script>
 </body>
 

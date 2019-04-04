@@ -33,7 +33,7 @@ app.get('/recipes/:foodName', function (req, res) {
         // let foodIndex = foods.indexOf[req.params.food]
         // let foodOfIntrest =  foods[foodIndex]
         console.log('someone is getting food recipes')
-        console.log(foods)
+        // console.log(foods)
         res.send(foods)
     })
 
