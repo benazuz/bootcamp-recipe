@@ -8,7 +8,15 @@ $('.btn').on('click', function(){
     })
 })
 
-$('.img').on('click', function(){
+// $('.img').on('click', function(){
+//     // let i = $(this).closest('div').find(ingredients[0])
+//     // console.log(i)
+//     // $('inpt').val('jdfldksjflksadjf')
     
+// })
+
+$('body').on('click','img',function(){
+    let i = $(this).closest('div').find('li:first')
+    console.log(i.text())
 })
 
